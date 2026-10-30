@@ -1,0 +1,40 @@
+$ python -m pytest -v --color=no --junitxml=evidence/pytest-results.xml
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.2, pluggy-1.6.0 -- /Users/ghanux/Desktop/7/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/ghanux/Desktop/7/Lab7-Joseph-Ghanem
+collecting ... collected 28 items
+
+test_user_Joseph_Ghanem.py::test_database_created_with_specified_users_on_first_run PASSED [  3%]
+test_user_Joseph_Ghanem.py::test_startup_preserves_updates_without_duplicate_seeds PASSED [  7%]
+test_user_Joseph_Ghanem.py::test_restart_does_not_restore_deleted_users PASSED [ 10%]
+test_user_Joseph_Ghanem.py::test_insert_user PASSED                      [ 14%]
+test_user_Joseph_Ghanem.py::test_get_users PASSED                        [ 17%]
+test_user_Joseph_Ghanem.py::test_get_users_by_id PASSED                  [ 21%]
+test_user_Joseph_Ghanem.py::test_get_users_by_id_missing PASSED          [ 25%]
+test_user_Joseph_Ghanem.py::test_update_user PASSED                      [ 28%]
+test_user_Joseph_Ghanem.py::test_update_user_missing PASSED              [ 32%]
+test_user_Joseph_Ghanem.py::test_delete_user PASSED                      [ 35%]
+test_user_Joseph_Ghanem.py::test_delete_user_missing PASSED              [ 39%]
+test_user_Joseph_Ghanem.py::test_api_get_users PASSED                    [ 42%]
+test_user_Joseph_Ghanem.py::test_api_get_user PASSED                     [ 46%]
+test_user_Joseph_Ghanem.py::test_api_get_user_missing PASSED             [ 50%]
+test_user_Joseph_Ghanem.py::test_api_add_user PASSED                     [ 53%]
+test_user_Joseph_Ghanem.py::test_api_update_user PASSED                  [ 57%]
+test_user_Joseph_Ghanem.py::test_api_update_user_missing PASSED          [ 60%]
+test_user_Joseph_Ghanem.py::test_api_delete_user PASSED                  [ 64%]
+test_user_Joseph_Ghanem.py::test_api_delete_user_missing PASSED          [ 67%]
+test_user_Joseph_Ghanem.py::test_api_add_rejects_missing_fields[name] PASSED [ 71%]
+test_user_Joseph_Ghanem.py::test_api_add_rejects_missing_fields[email] PASSED [ 75%]
+test_user_Joseph_Ghanem.py::test_api_add_rejects_missing_fields[phone] PASSED [ 78%]
+test_user_Joseph_Ghanem.py::test_api_add_rejects_missing_fields[address] PASSED [ 82%]
+test_user_Joseph_Ghanem.py::test_api_add_rejects_missing_fields[country] PASSED [ 85%]
+test_user_Joseph_Ghanem.py::test_api_update_rejects_invalid_id PASSED    [ 89%]
+test_user_Joseph_Ghanem.py::test_api_add_rejects_non_json PASSED         [ 92%]
+test_user_Joseph_Ghanem.py::test_api_patch_preserves_other_fields PASSED [ 96%]
+test_user_Joseph_Ghanem.py::test_insert_handles_apostrophes_and_sql_text PASSED [100%]
+
+- generated xml file: /Users/ghanux/Desktop/7/Lab7-Joseph-Ghanem/evidence/pytest-results.xml -
+============================== 28 passed in 1.66s ==============================
+
+Exit code: 0
